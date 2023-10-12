@@ -1,7 +1,54 @@
 body {
-  background-color: rgb(247, 247, 252);
+  background-color: rgb(253, 236, 3);
   border: 2px solid #000;
- 
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0;
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+header,
+nav,
+article,
+aside,
+footer {
+  padding: 5px;
+}
+header {
+  background-color: #ffe200;
+  text-align: center;
+}
+nav {
+  background-color: #7fc78e;
+}
+article {
+  flex: 1;
+  background-color: hwb(43 11% 3%);
+  text-align: center;
+}
+aside {
+  background-color: #fffffc;
+  text-align: center;
+}
+main {
+  display: flex;
+  flex: 1;
+}
+footer {
+  background-color: #ffe200;
+  text-align: center;
+}
+
+nav,
+aside {
+  /* 12em is the width of the side columns */
+  flex: 0 0 12em;
 }
 
 
